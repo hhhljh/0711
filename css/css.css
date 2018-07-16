@@ -1,0 +1,116 @@
+*{margin:0;padding:0;}
+a{text-decoration:none;color:#000;}
+ul, li{list-style:none;}
+body{font-family:"Nanum Barun Gothic";font-weight:200;letter-spacing:-0.5px;}
+
+/*헤더*/
+#header{width:100%;height:140px;z-index:100;background:#fff;top:0;position: fixed;}
+.head{background:#34495e;}
+.head .link{color:#fff;height:40px;width:1280px;text-align:right;line-height:40px;}
+.head .link a{border-right:1px solid rgba(255,255,255,.6);padding:0 20px;height:12px;font-size:12px;color:#fff;}
+.navi{height:100px;margin:0 auto;align-items:center;display:flex;justify-content:space-between;width:1280px;}
+.navi .logo{width:175px;display:inline-block;margin:20px 0;}
+.navi .menu{height:100px;align-items:center;line-height:100px;}
+.navi .menu ul{display:flex;height:40px;}
+.navi .menu a{font-size:18px;padding:0 20px;display:block;height:100px;}
+.navi .menu a:hover{background:#34495e;color:#fff;}
+
+/*슬라이드*/
+#sec{width:100%;height:700px;overflow:hidden;margin-top:140px;}
+.slide{height:700px;position: relative;}
+.slide_back{background:#000;opacity:0.2;position: absolute;top:0;bottom:0;left:0;right:0;z-index:10;}
+.slide ul{display:flex;height:700px;width:400%;}
+.slide li{width:25%;background: no-repeat center / cover;}
+.slide li:nth-child(1){background-image:url(../img/slide1.jpg);}
+.slide li:nth-child(2){background-image:url(../img/slide2.jpg);}
+.slide li:nth-child(3){background-image:url(../img/slide3.jpg);}
+.slide li:nth-child(4){background-image:url(../img/slide4.jpg);}
+.slogan{position: absolute;top:20%;left:calc(50% - 320px);z-index:50;}
+/*.arrow{}*/
+.arrow.before{background-image:url(./img/btn-arrow-left.png);}
+.arrow.before{background-image:url(./img/btn-arrow-right.png);}
+
+/*섹션1*/
+.name{text-align:center;margin:50px auto;justify-content:center;}
+.name h3{font-size:35px;font-weight:400;}
+.bar{width:100px;height:1px;background:#000;margin:20px auto;}
+#sec1{width:100%;height:100%;}
+#sec1 .content{width:1130px;margin:90px auto;display:flex;flex-wrap:wrap;}
+#sec1 .content>div{width:350px;height:450px;box-shadow:2px 2px 2px 2px #aaa;margin:10px;border-radius:5px;position: relative;}
+#sec1 .content>div a{width:100%;height:100%;background:rgba(0,0,0,.5);position:absolute;top:0;bottom:0;border-radius:5px;opacity:0;}
+#sec1 .content>div:hover a{opacity:1;transition:.3s;}
+.tourimg{width:350px;height:330px;background:no-repeat center / cover;}
+.box2 .tourimg{background-image:url(../img/photo2.jpg);}
+.box3 .tourimg{background-image:url(../img/photo3.jpg);}
+.box4 .tourimg{background-image:url(../img/photo4.jpg);}
+.box5 .tourimg{background-image:url(../img/photo5.jpg);}
+.box6 .tourimg{background-image:url(../img/photo6.jpg);}
+.txt_box{padding:20px;}
+.txt_box h4{font-weight:600;font-size:21px;}
+.txt_box .gray{font-size:17px;opacity:.7;margin:5px 0;}
+.txt_box .red{font-size:12px;color:#e50100;font-weight:600;margin:5px 0;}
+/*모달*/
+.modal{position:fixed;z-index:100;background:#faa;width:100%;height:100%;background:rgba(0,0,0,.2);z-index:100;top:0;justify-content:space-around;}
+#modal1{position:relative;height:770px;z-index:110;display:flex;}
+.leftm{width:350px;height:480px;position: relative;align-content:center;background:#fff;}
+.leftm .txt_box{margin:15px 0 0;}
+.rightm{width:500px;background:#fff;margin-left:10px;padding:20px 30px;height:440px;}
+.info{font-size:15px;opacity:.8;}
+
+/*섹션2*/
+.type1{width:595px;height:595px;}
+.type2{width:290px;height:290px;}
+.type3{width:290px;height:595px;}
+.type4{width:600px;height:290px;}
+#sec2 .content{width:1280px;margin:0 auto;}
+.content ul{display:flex;flex-wrap:wrap;}
+.content li{background:no-repeat center / cover;margin:10px;display:inline-block;position: relative;}
+.content li:nth-child(1){background-image:url(../img/food1.jpg);}
+.content li:nth-child(2){background-image:url(../img/food2.jpg);}
+.content li:nth-child(3){background-image:url(../img/food6.jpg);}
+.content li:nth-child(4){background-image:url(../img/food3.jpg);}
+.content li:nth-child(5){background-image:url(../img/food4.jpg);}
+.content li:nth-child(6){background-image:url(../img/food5.jpg); margin-top:-290px;}
+.content li:nth-child(7){background-image:url(../img/food7.jpg);}
+.content li:nth-child(8){background-image:url(../img/food8.jpg);}
+.content li:nth-child(9){background-image:url(../img/food9.jpg);}
+.content li:nth-child(10){background-image:url(../img/food10.jpg);}
+.content li:hover .black_box{height:100%;transform:translateY(0);transition:.7s;}
+.content li:hover .hide{opacity:1;}
+.black_box{width:100%;height:125px;background:rgba(0,0,0,.85);bottom:0;position: absolute;}
+.black_txt{padding:25px 15px;}
+.black_txt h3{color:#fff;font-size:25px;}
+.black_txt>p{color:rgba(255,255,255,.8);font-size:17px;margin:5px 0;}
+.hide{opacity:0;color:rgba(255,255,255,.7);font-size:13px;}
+
+/*섹션3*/
+#sec3{width:100%;height:670px;position: relative;margin:30px 0 170px;}
+.sec3_wrap{height:100%;display:flex;flex-wrap:wrap;}
+.sec3_wrap .img_wrap{background:no-repeat center / cover; height:100%;width:33.3%;position: relative;}
+.sec3_wrap .img_wrap:nth-child(1){background-image:url(../img/nature1.jpg);}
+.sec3_wrap .img_wrap:nth-child(2){background-image:url(../img/nature2.jpg);}
+.sec3_wrap .img_wrap:nth-child(3){background-image:url(../img/nature3.jpg);}
+.be_dark{width:100%;height:100%;background:rgba(0,0,0,.4);position: absolute;left:0;top:0;z-index:0;}
+.title{color:#fff;font-weight:400;font-size:55px;text-align:center;line-height:670px;z-index:100;}
+
+/*섹션4*/
+#sec4 .content{width:1100px;margin:0 auto;position: relative;}
+.sub{display:flex;flex-wrap:wrap;margin:20px 0;}
+.review_img{width:300px;height:200px;z-index:10;position: relative;}
+.review_img li{position:absolute;left:0;top:0;transition:.3s;}
+.review_img li:first-child{z-index:30;}
+.review_img li:first-child+li{z-index:20;}
+.review_img li:first-child:hover+li{left:100%;}
+.review_img li:first-child:hover+li+li{left:200%;}
+.review h3{color:#113184;font-size:21px;font-weight:400;margin:10px 0;}
+.review h4{color:#000;font-size:15px;font-weight:400;}
+.review p{font-size:15px;margin:5px 0;color:rgba(0,0,0,.8);}
+.review{width:680px;height:200px;margin:0 20px;position: absolute;right:80px;z-index:0;}
+
+/*푸터*/
+.sns ul{display:flex;}
+.sns li{margin:0 5px;}
+.text div{display:flex;margin:5px 0;}
+.text p{font-weight:400; font-size:13px;margin:0 5px;}
+.text .pbar{height:13px; padding:0 10px 0 0;border-right:1px solid rgba(0,0,0,.5);line-height:13px;}
+footer{display:flex;margin:100px auto 0;width:1280px;justify-content:space-between;}
