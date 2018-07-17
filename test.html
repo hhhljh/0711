@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		#test:target{
+			position: fixed;
+			left: 0;
+			top: 0;
+			bottom: 0;
+			right: 0;
+			display:flex;
+			background:rgba(0,0,0,0.5);
+			justify-content: center;
+			align-items: center;
+		}
+		#test:target>div{
+			background:#fff;
+			padding:10px;
+			width:500px;
+			height:500px;
+		}
+	</style>
+</head>
+<body>
+	<div>
+		<a href="#test">껄껄</a>
+		<div id="test">
+			<div>
+				<a href="#">X</a>
+				<p>안녕하세요</p>
+				<p>test</p>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
