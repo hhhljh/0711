@@ -1,0 +1,110 @@
+*{margin:0;padding:0;}
+ul, li{list-style:none;color:inherit;text-decoration:none;}
+a{text-decoration:none;color:inherit;}
+
+/*헤드*/
+#header{width:100%;height:120px;}
+.up{height:40px;background:#34495e;position: relative;}
+.up>div{width:1280px;height:40px;margin:0 auto;}
+.up p{font-size:12px;margin:10px;color:#fff;}
+.right{display:flex;width:210px;float:;}
+.upbar{width:1px;height:10px;background:rgba(255,255,255,.6);margin:15px 3px;}
+.down{width:1280px;margin:0 auto;height:100px;background:#fff;display:flex;}
+.down img{width:180px;margin:10px 0;}
+.menu{height:100px;width:1280px;line-height:100px;position: relative;}
+.menu ul{display:flex;position: absolute;right:0;}
+.menu a{padding:0 20px;font-size:19px;}
+.menu a:hover{background:#34495e;color:#fff;}
+
+/*슬라이드*/
+.slide{width:100%;height:720px;position: relative;margin-top:20px;}
+.bb{position: absolute;top:0;bottom:0;left:0;right:0;z-index:30;background:rgba(0,0,0,.25);}
+.swrap img{width:710px;height:60px;position: absolute;z-index:200;left:calc(50% - 355px);}
+.ss{width:400%;height:700px;}
+.ss ul{display:flex;flex-wrap:wrap;}
+.swrap li{background:no-repeat center / cover;width:100%;height:700px;}
+.swrap li:nth-child(1){background:url(../images/slide1.png)}
+.swrap li:nth-child(2){background:url(../images/slide2.png)}
+.swrap li:nth-child(3){background:url(../images/slide3.png)}
+.swrap li:nth-child(4){background:url(../images/slide4.png)}
+.arrow{z-index:200;}
+.arrow.before{background:url(../);}
+
+/*관광지*/
+.name{margin:30px auto;text-align: center;}
+.name h3{font-size:35px;font-weight:400;margin:20px 0;}
+.bbar{width:100px;height:1px;background:#000;margin:10px auto;}
+.box{width:350px;height:450px;margin:15px;box-shadow:1px 1px 1px 1px #aaa;position: relative;}
+.con>div:hover{cursor:pointer;}
+.con>div:hover .aph{opacity:1;}
+.black img{width:100%;}
+.aph{background:rgba(0,0,0,.4);position: absolute;top:0;bottom:0;left:0;right:0;opacity:0;transition:.3s}
+.wblock{background:#fff;width:310px;height:80px;padding:19px;}
+.wblock h3{font-size:21px;}
+.wblock .gray{font-size:17px;color:#aaa;}
+.wblock .hash{font-size:12px;color:#e50100;}
+.con{display:flex;width:1280px;height:970px;position: relative;flex-wrap:wrap;margin:0 auto;justify-content:center;}
+#part1{background:#e9e9e9;}
+
+/*먹거리*/
+.type1{width:595px;height:595px;}
+.type2{width:285px;height:285px;}
+.type3{width:285px;height:595px;}
+.type4{width:595px;height:285px;}
+.foods{width:1280px;margin:0 auto;display:flex;flex-wrap:wrap;}
+.foods>div{background:no-repeat center/ cover;margin:10px;position: relative;}
+.foods>div:hover .bbox{height:100%;transform:translateY(0px);}
+.foods>div:hover .hide{opacity:1;}
+.foods>div:nth-child(1){background:url(../images/food1.png)}
+.foods>div:nth-child(2){background:url(../images/food2.png)}
+.foods>div:nth-child(3){background:url(../images/food3.png)}
+.foods>div:nth-child(4){background:url(../images/food5.png)}
+.foods>div:nth-child(5){background:url(../images/food6.png)}
+.foods>div:nth-child(6){background:url(../images/food4.png);margin-top:-295px;}
+.foods>div:nth-child(7){background:url(../images/food7.png)}
+.foods>div:nth-child(8){background:url(../images/food8.png)}
+.foods>div:nth-child(9){background:url(../images/food9.png)}
+.foods>div:nth-child(10){background:url(../images/food10.png)}
+.bbox{position: absolute;bottom:0;left:0;right:0;background:rgba(0,0,0,.6);height:125px;transition:.3s;}
+.bbox h3{color:#fff;margin:15px;font-size:25px;}
+.bbox p{color:#fff;margin:10px 15px;font-size:17px;}
+.hide{opacity:0;}
+
+/*공연 및 축제*/
+
+#part3{width:100%;height:670px;border:1px solid #000;margin:50px 0;display:flex;}
+#part3>div{width:33.3%;height:100%;background:no-repeat center / cover;position: relative;transition:.4s}
+#part3>div:hover{width:60%;}
+#part3>div:nth-child(1){background:url(../images/p3_1.png);}
+#part3>div:nth-child(2){background:url(../images/p3_2.png);}
+#part3>div:nth-child(3){background:url(../images/p3_3.png);}
+#part3 .name{color:#fff;z-index:100;position: absolute;left:calc(50% - 70px);top:calc(50% - 70px);}
+#part3 .bbar{background:#fff;}
+.wrap3{position: absolute;top:0;bottom:0;left:0;right:0;background:rgba(0,0,0,.5);z-index:0;}
+
+/*후기*/
+.review{width:1200px;height:900px;position: relative;margin:0 auto;}
+.sub{height:300px;width:100%;display:flex;flex-wrap:wrap;}
+.sub ul{display:flex;flex-wrap:wrap;width:300px;height:200px;position: relative;margin-right:30px;}
+.sub li{background:no-repeat center / cover;width:33.3%;height:200px;position: absolute;left:0;top:0;bottom:0;width:300px;transition:.5s}
+.sub li:nth-child(1){z-index:30;}
+.sub li:nth-child(2){z-index:20;}
+.sub li:nth-child(3){z-index:10;}
+.sub li:nth-child(1):hover+li{left:100%;}
+.sub li:nth-child(1):hover+li+li{left:200%;}
+.sub.w1 li{background:url(../images/re1.png);}
+.sub.w2 li{background:url(../images/re2.png);}
+.sub.w3 li{background:url(../images/re3.png);}
+.rev{width:800px;}
+.rev h3{font-weight:400;color:#09f;font-size:21px;}
+.rev p{font-size:16px;}
+.gray{color:#aaa;font-size:15px;}
+
+footer{height:150px;width:100%;border-top:1px solid rgba(0,0,0,.5);margin:20px 0;}
+.width{width:1280px;height:100%;position: relative;margin:0 auto;}
+.bottom>div{display:flex;margin:3px 0;}
+.bottom>div p{margin:0 10px;}
+.bottom img{display:inline-block;}
+.him{display:flex;justify-content:space-between;}
+.sns{margin-top:30px;margin-bottom:10px;}
+.sns img{margin:0 5px;}
