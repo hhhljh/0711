@@ -1,0 +1,134 @@
+@keyframes slide1{
+	0%{margin-left:0;}
+	12%{margin-left:0;}
+	25%{margin-left:-100%;}
+	37%{margin-left:-100%;}
+	50%{margin-left:-200%;}
+	62%{margin-left:-200%;}
+	74%{margin-left:-300%;}
+	86%{margin-left:-300%;}
+	100%{margin-left:0;}
+}
+@keyframes slide2{
+	0%{margin-left:-100%;}
+	12%{margin-left:-100%;}
+	25%{margin-left:-200%;}
+	37%{margin-left:-200%;}
+	50%{margin-left:-300%;}
+	62%{margin-left:-300%;}
+	74%{margin-left:0%;}
+	86%{margin-left:0%;}
+	100%{margin-left:-100%;}
+}
+@keyframes slide3{
+	0%{margin-left:-200%}
+	12%{margin-left:-200%}
+	25%{margin-left:-300%;}
+	37%{margin-left:-300%;}
+	50%{margin-left:-00%;}
+	62%{margin-left:-00%;}
+	74%{margin-left:-100%;}
+	86%{margin-left:-100%;}
+	100%{margin-left:-200%}
+}
+@keyframes slide4{
+	0%{margin-left:-300%}
+	12%{margin-left:-300%}
+	25%{margin-left:-0%;}
+	37%{margin-left:-0%;}
+	50%{margin-left:-100%;}
+	62%{margin-left:-100%;}
+	74%{margin-left:-200%;}
+	86%{margin-left:-200%;}
+	100%{margin-left:-300%}
+}
+
+@keyframes arrow1{
+	0%{z-index:40;}
+	24%{z-index:40;}
+	25%{z-index:00;}
+	49%{z-index:00;}
+	50%{z-index:00;}
+	74%{z-index:00;}
+	75%{z-index:00;}
+	99%{z-index:00;}
+	100%{z-index:40;}
+}
+@keyframes arrow2{
+	0%{z-index:00;}
+	24%{z-index:00;}
+	25%{z-index:40;}
+	49%{z-index:40;}
+	50%{z-index:00;}
+	74%{z-index:00;}
+	75%{z-index:00;}
+	99%{z-index:00;}
+	100%{z-index:00;}
+}
+@keyframes arrow3{
+	0%{z-index:00;}
+	24%{z-index:00;}
+	25%{z-index:00;}
+	49%{z-index:00;}
+	50%{z-index:40;}
+	74%{z-index:40;}
+	75%{z-index:00;}
+	99%{z-index:00;}
+	100%{z-index:00;}
+}
+@keyframes arrow2{
+	0%{z-index:00;}
+	24%{z-index:00;}
+	25%{z-index:00;}
+	49%{z-index:00;}
+	50%{z-index:00;}
+	74%{z-index:00;}
+	75%{z-index:40;}
+	99%{z-index:40;}
+	100%{z-index:00;}
+}
+
+@keyframes pos1{
+	0%{width:40px;}
+	12%{width:40px;}
+	25%{width:20px;}
+	37%{width:20px;}
+	50%{width:20px;}
+	62%{width:20px;}
+	74%{width:20px;}
+	86%{width:20px;}
+	100%{width:40px;}
+}
+@keyframes pos2{
+	0%{width:20px;}
+	12%{width:20px;}
+	25%{width:40px;}
+	37%{width:40px;}
+	50%{width:20px;}
+	62%{width:20px;}
+	74%{width:20px;}
+	86%{width:20px;}
+	100%{width:20px;}
+}
+@keyframes pos3{
+	0%{width:20px;}
+	12%{width:20px;}
+	25%{width:20px;}
+	37%{width:20px;}
+	50%{width:40px;}
+	62%{width:40px;}
+	74%{width:20px;}
+	86%{width:20px;}
+	100%{width:20px;}
+}
+@keyframes pos3{
+	0%{width:20px;}
+	12%{width:20px;}
+	25%{width:20px;}
+	37%{width:20px;}
+	50%{width:20px;}
+	62%{width:20px;}
+	74%{width:40px;}
+	86%{width:40px;}
+	100%{width:20px;}
+}

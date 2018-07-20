@@ -4,7 +4,7 @@ ul, li{list-style-type:none;}
 body{font-family:"Nanum Barun Gothic";font-weight:400;}
 
 /*헤더: 상단+네비게이션*/
-#header{width:100%;height:140px;background:#fff;position: fixed;z-index:300;}
+#header{width:100%;height:140px;background:#fff;position: fixed;z-index:300;top:0;}
 .up{width:100%;height:40px;background:#34495e;position: relative;}
 .wrap{width:1280px;height:40px;margin:0 auto;}
 .click{width:220px;height:40px;line-height:40px;display:flex;float:right;}
@@ -18,18 +18,54 @@ body{font-family:"Nanum Barun Gothic";font-weight:400;}
 .menu a:hover{background:#34495e;color:#fff;}
 
 /*슬라이드: 이미지 4개가 8초를 텀으로 슬라이드가 실행됨.*/
-#sec{width:100%;height:840px;position: relative;overflow:hidden}
-#sec input{position: absolute;bottom:0;left:0;}
-.slide_back{position: absolute;top:140px;bottom:0;left:0;right:0;background:rgba(0,0,0,.25);}
+#sec{width:100%;height:700px;position: relative;margin-top:140px;}
+#sec input{}
+.slide_back{position: absolute;top:0;bottom:0;left:0;right:0;background:rgba(0,0,0,.25);}
 .slogan{position: absolute;top:170px;left:calc(50% - 345px);z-index:30;}
 .slogan img{width:690px;height:70px;}
-.slide{width:100%;height:700px;margin-top:140px;}
+.slide{width:100%;height:700px;}
 .slide ul{display:flex;flex-wrap:wrap;width:400%;height:100%;}
-.slide li{background:no-repeat center / cover;width:100%;height:100%;}
+.slide li{background:no-repeat center / cover;width:25%;height:100%;}
 .slide li:nth-child(1){background:url(../images/slide1.png)}
 .slide li:nth-child(2){background:url(../images/slide2.png)}
 .slide li:nth-child(3){background:url(../images/slide3.png)}
 .slide li:nth-child(4){background:url(../images/slide4.png)}
+.arrow{position: absolute;top:calc(50% - 20px);background:no-repeat center / cover;width:26px;height:40px;transition:.2s;z-index:40;}
+.arrow label{position: absolute;top:0;bottom:0;left:0;right:0;}
+.arrow.before{background:url(../images/arrow_befo.png);left:20%;}
+.arrow.before:hover{background:url(../images/arrow_befo_act.png);left:20%;}
+.arrow.next{background:url(../images/arrow_next.png);right:20%;}
+.arrow.next:hover{background:url(../images/arrow_next_act.png);right:20%;}
+.pos{width:auto;height:40px;position: absolute;bottom:7%;left:calc(50% - 50px)}
+.stop{border-radius:0px !important;background:url(../images/stop.png) no-repeat center / cover !important;}
+.pos label{width:20px;height:20px;background:#fff;border-radius:10px;display:inline-block;margin:0 3px;}
+
+#pos1:checked ~ .slide ul{animation: slide1 infinite 8s;}
+#pos2:checked ~ .slide ul{animation: slide2 infinite 8s;}
+#pos3:checked ~ .slide ul{animation: slide3 infinite 8s;}
+#pos4:checked ~ .slide ul{animation: slide4 infinite 8s;}
+
+#pos1:checked ~ .slide .arrow label:nth-child(1){animation: arrow1 infinite 8s;}
+#pos1:checked ~ .slide .arrow label:nth-child(2){animation: arrow2 infinite 8s;}
+#pos1:checked ~ .slide .arrow label:nth-child(3){animation: arrow3 infinite 8s;}
+#pos1:checked ~ .slide .arrow label:nth-child(4){animation: arrow4 infinite 8s;}
+
+#pos2:checked ~ .slide .arrow label:nth-child(1){animation: arrow4 infinite 8s;}
+#pos2:checked ~ .slide .arrow label:nth-child(2){animation: arrow1 infinite 8s;}
+#pos2:checked ~ .slide .arrow label:nth-child(3){animation: arrow2 infinite 8s;}
+#pos2:checked ~ .slide .arrow label:nth-child(4){animation: arrow3 infinite 8s;}
+
+#pos3:checked ~ .slide .arrow label:nth-child(2){animation: arrow3 infinite 8s;}
+#pos3:checked ~ .slide .arrow label:nth-child(3){animation: arrow2 infinite 8s;}
+#pos3:checked ~ .slide .arrow label:nth-child(4){animation: arrow1 infinite 8s;}
+#pos3:checked ~ .slide .arrow label:nth-child(1){animation: arrow4 infinite 8s;}
+
+#pos4:checked ~ .slide .arrow label:nth-child(1){animation: arrow2 infinite 8s;}
+#pos4:checked ~ .slide .arrow label:nth-child(2){animation: arrow3 infinite 8s;}
+#pos4:checked ~ .slide .arrow label:nth-child(3){animation: arrow4 infinite 8s;}
+#pos4:checked ~ .slide .arrow label:nth-child(4){animation: arrow1 infinite 8s;}
+
+#
 
 /*공용요소 :타이틀 등...*/
 .name{margin:30px auto;text-align: center;}
@@ -61,7 +97,7 @@ body{font-family:"Nanum Barun Gothic";font-weight:400;}
 .food>div:hover .hide{opacity:1;}
 .food>div img{width:100%;height:100%;}
 .black{width:100%;height:125px;background:rgba(0,0,0,.7);color:#fff;position: absolute;bottom:0;transition:.4s;}
-.black h3{color#fff;margin:20px 15px 10px 15px;font-size:25px;}
+.black h3{color:#fff;margin:20px 15px 10px 15px;font-size:25px;}
 .black p{font-size:17px;margin:0 15px;}
 .hide{color:#fff;font-size:15px;opacity:0;margin:15px;font-weight:200;}
 
@@ -112,7 +148,7 @@ body{font-family:"Nanum Barun Gothic";font-weight:400;}
 .logo{width:30vw;height:auto;margin:7px 0;}
 .menu{width:70vw;height:100px;text-align: center;}
 .menu ul{display:flex;}
-.menu a{display:block;padding:0 20px;font-size:auto;height:100px;line-height:100px;}
+.menu a{display:block;padding:0 20px;font-size:15px;height:100px;line-height:100px;}
 .menu a:hover{background:#34495e;color:#fff;}
 
 /*슬라이드: 이미지 4개가 8초를 텀으로 슬라이드가 실행됨.*/
@@ -163,7 +199,7 @@ body{font-family:"Nanum Barun Gothic";font-weight:400;}
 .food>div:hover .hide{opacity:1;}
 .food>div img{width:100%;height:100%;}
 .black{width:100%;height:30%;background:rgba(0,0,0,.7);color:#fff;position: absolute;bottom:0;transition:.4s;}
-.black h3{color#fff;margin:10px 15px;font-size:15px;}
+.black h3{color:#fff;margin:10px 15px;font-size:15px;}
 .black p{font-size:12px;margin:0 15px;}
 .hide{color:#fff;font-size:10px;opacity:0;margin:15px;font-weight:200;}
 .ww1{width:60%;height:30%;}
@@ -173,7 +209,8 @@ body{font-family:"Nanum Barun Gothic";font-weight:400;}
 .ww5{width:50%;height:30%;}
 
 /*공연 및 축제: 여수의 3가지 대표  공연 및 축제를 소개*/
-#part3{width:100%;height:650px;display:block;}
+#part3{width:100%;display:flex;flex-wrap:wrap;position: relative;height:1000px;margin-top:100px;}
+#part3>div:before{position: absolute;top:0;bottom:0;right:0;left:0;}
 #part3>div{position: relative;width:100%;height:33.3%;transition:.6s;}
 #part3>div:hover{height:60%;width:100%;}
 #part3>div img{height:100%;width:100%;}
@@ -182,7 +219,7 @@ body{font-family:"Nanum Barun Gothic";font-weight:400;}
 #part3 .line{background:#fff;}
 
 /*후기 : 여러 방문할 곳에 대한 사진과 날짜 등이 있음.*/
-#part4{width:100%;margin:0 auto;height:1300px;}
+#part4{width:100%;margin:0 auto;height:1300px;margin-top:70px;}
 .review{width:95vw;height:32vw;justify-content:space-between;padding:10px;margin:0 auto;display:flex;}
 .review ul{display:flex;flex-wrap:wrap;position: relative;width:300px;height:200px;}
 .review li{background:no-repeat center / cover;width:300px;height:200px;position: absolute;left:0;transition:.3s;}
@@ -201,13 +238,13 @@ body{font-family:"Nanum Barun Gothic";font-weight:400;}
 
 /*푸터 : 하단 sns +  메뉴 +회색 로고*/
 #footer{width:100%;height:150px;border-top:1px solid rgba(0,0,0,.3);}
-.foot{width:100%;height:150px;margin:0 auto;margin-top:30px;text-align: center;}
-.sns{width:300px;margin:0 auto;}
+.foot{width:100%;height:150px;margin:0 auto;margin-top:30px;}
+.sns{width:300px;margin:0 auto;margin-top:200px;}
 .sns img{margin:5px;}
-.last{display:block;justify-content:center;}
-.last>div div{display:flex;font-size:15px;text-align: center;s}
+.last{display:block;justify-content:center;position: relative;}
+.last>div div{display:flex;font-size:15px;}
 .last>div div a{margin:5px 10px;margin-left:0px;}
 .last>div div p{margin:5px 10px;margin-left:0px;}
 .t3{font-size:20px;margin:5px;margin-left:0;}
-.gray_logo{position: absolute;left:40%;}
+.gray_logo{}
 }
