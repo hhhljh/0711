@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>INDEX</title>
+	<link rel="stylesheet" type="text/css" href="./css/css.css">
+	<link rel="stylesheet" type="text/css" href="./nanumbarungothic/css/nanumbarungothic.css">
+</head>
+<body>
+	<header id="header">
+<!-- 헤더: 상단+네비게이션 -->
+		<div class="up">
+			<div class="wrap">
+				<div class="click">
+					<p>로그인</p>
+					<div class="cbar"></div>
+					<p>회원가입</p>
+					<div class="cbar"></div>
+					<p>사이트탭</p>
+				</div>
+			</div>
+		</div>
+		<div class="navi">
+			<div class="logo">
+				<img src="./images/logo.png" alt="logo">
+			</div>
+			<div class="menu">
+				<ul>
+					<li><a href="#part1">관광지 소개</a></li>
+					<li><a href="#part2">먹거리 소개</a></li>
+					<li><a href="#part3">축제 및 체험</a></li>
+					<li><a href="#part4">후기</a></li>
+				</ul>
+			</div>
+		</div>
+	</header>
+ 	<section id="section">
+<!-- 메인 영역:슬라이드 + 관광지 소개 +먹거리 소개 + 축제 및 체험 + 후기 -->
+		<section id="sec">
+		<!-- 슬라이드: 이미지 4개가 8초를 텀으로 슬라이드가 실행됨. -->
+			<input type="radio" name="pos" id="pos1" checked>
+			<input type="radio" name="pos" id="pos2">
+			<input type="radio" name="pos" id="pos3">
+			<input type="radio" name="pos" id="pos4">
+			<input type="checkbox" name="stop" id="stop">
+			<div class="slide">
+				<div class="slogan">
+					<img src="./images/slogan.png" alt="slogan">
+				</div>
+				<div class="slide_back"></div>
+				<ul>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+				</ul>
+				<div class="arrow before">
+					<label for="pos4">4</label>
+					<label for="pos3">3</label>
+					<label for="pos2">2</label>
+					<label for="pos1">1</label>
+				</div>
+				<div class="arrow next">
+					<label for="pos2">2</label>
+					<label for="pos3">3</label>
+					<label for="pos4">4</label>
+					<label for="pos1">1</label>
+				</div>
+				<div class="pos">
+					<label for="pos1">1</label>
+					<label for="pos2">2</label>
+					<label for="pos3">3</label>
+					<label for="pos4">4</label>
+					<label for="stop" class="stop">
+						<img src="./images/stop.png" alt="stop">
+					</label>
+				</div>
+			</div>
+		</section>
+		<section id="part1">
+		<!-- 관광지 소개 :  6가지의 여수 관광지 소개 -->
+			<div class="name">
+				<h3>관광지 소개</h3>
+				<div class="line"></div>
+			</div>
+			<div class="con">
+				<div class="box">
+					<a href="#modal1">
+						<div class="bwrap"></div>
+						<img src="./images/go1.png" alt="관광지1">
+						<div class="wblock">
+							<h3>오동도</h3>
+							<p class="gray">섬자체가 하나의 동백꽃</p>
+							<p class="hash">#야경  #거북선대교  #이순신대교  #돌산대교</p>
+						</div>
+					</a>
+				</div>
+				<div class="box">
+					<a href="#modal2">
+						<div class="bwrap"></div>
+						<img src="./images/go2.png" alt="관광지2">
+						<div class="wblock">
+							<h3>거문도</h3>
+							<p class="gray">남해안 최초로 불을 밝힌 거문도</p>
+							<p class="hash">#녹산등대  #백도  #삼호교</p>
+						</div>
+					</a>
+				</div>
+				<div class="box">
+					<a href="#modal3">
+						<div class="bwrap"></div>
+						<img src="./images/go3.png" alt="관광지3">
+						<div class="wblock">
+							<h3>향일암</h3>
+							<p class="gray">떠오르는 해와 함께 희망을 염원하며 하늘로</p>
+							<p class="hash">#일출  #대웅전  #충무공</p>
+						</div>
+					</a>
+				</div>
+				<div class="box">
+					<a href="#modal4">
+						<div class="bwrap"></div>
+						<img src="./images/go4.png" alt="관광지4">
+						<div class="wblock">
+							<h3>금오도 비렁길</h3>
+							<p class="gray">해안을 따라 끝없이 펼쳐진 벼랑</p>
+							<p class="hash">#김복남살인사건  #혈의누  #인어공주</p>
+						</div>
+					</a>
+				</div>
+				<div class="box">
+					<a href="#modal5">
+						<div class="bwrap"></div>
+						<img src="./images/go5.png" alt="관광지5">
+						<div class="wblock">
+							<h3>여수세계박람회장</h3>
+							<p class="gray">끝없이 펼쳐진 바다와 공연이벤트</p>
+							<p class="hash">#여수엑스포  #디지털갤러리  #스카이타워  #아쿠아플라넷</p>
+						</div>
+					</a>
+				</div>
+				<div class="box">
+					<a href="#modal6">
+						<div class="bwrap"></div>
+						<img src="./images/go6.png" alt="관광지6">
+						<div class="wblock">
+							<h3>여수밤바다</h3>
+							<p class="gray">낭만과 황홀함이 넘치는 여수 도심 야경</p>
+							<p class="hash">#야경  #거북선대교  #이순신대교  #돌산대교</p>
+						</div>
+					</a>
+				</div>
+			</div>
+		</section>
+		<section id="part2">
+			<!-- 먹거리 소개: 여수의 10가지 음식들 소개 -->			
+			<div class="name">
+				<h3>먹거리 소개</h3>
+				<div class="line"></div>
+			</div>
+			<div class="food">
+				<div class="food1 type1 ww1">
+					<img src="./images/food1.png" alt="food1">
+					<div class="black">
+						<h3>게장백반</h3>
+						<p>달콤 짭조름 대한민국 공식 밥도둑</p>
+						<div class="hide">
+							매콤한 맛과 달콤한 맛이 입안에 착착 감겨오는 양념게장과
+							짜지도않고 달지도 않은 간간한 맛이 입안을 자극하는 간장게장과 전통발효식품 된장에 숙성된 된장게장의 구수함은 입안을 즐겁게 합니다.
+							매콤한 양념게장과 간간한 간장게장 그리고 구수한 된장게장까지 여수 밥도둑 게장의 진미를 느낄 수 있습니다.
+						</div>
+					</div>
+				</div>
+				<div class="food2 type2 ww2">
+					<img src="./images/food2.png" alt="food2">
+					<div class="black">
+						<h3>장어구이</h3>
+						<p>힘 좋은 여수바다장어</p>
+						<div class="hide">
+							장어 한 마리면 열보약도 부럽지 않다는 장어요리
+비타민A의 보고로 노화예방과 동맥경화를 예방하여 허약체질 개선에도 최고입니다.
+살아있는 맛에 힘이 솟는 장어구는 소금구이와 양념구이가 있으며 어떻게 먹어도 쫄깃하고 고소한 맛은 모두의 입맛을 사로잡습니다.
+						</div>
+					</div>
+				</div>
+				<div class="food3 type3 ww2">
+					<img src="./images/food3.png" alt="food3">
+					<div class="black">
+						<h3>서대회</h3>
+						<p>막걸리식초와의 새콤달콤한 콜라보</p>
+						<div class="hide">
+							막걸리로 발효시킨 식초와 초고추장, 그리고 온갖 채소와의 조화
+부드러우면서도 새콤달콤한 서대회무침
+따끈한 밥에 버무려 먹으면 서대회의 진미를 느낄 수 있습니다.
+						</div>
+					</div>
+				</div>
+				<div class="food4 type2 ww1">
+					<img src="./images/food4.png" alt="food4">
+					<div class="black">
+						<h3>새조개 샤부샤부</h3>
+						<p>조개의 황제 100% 자연산</p>
+						<div class="hide">
+							많은 영양분을 함유하고 있어 ‘조개의 황제’로 불리는 새조개는 속살이 새의 부리모양과 닮았다하여 붙여진 이름이며
+샤브샤브는 버섯, 파, 고추, 마늘 등으로 우러낸 야채국물에 살짝 데쳐 소스와 함께 즐기면 감칠맛과 바다향이 몸속으로 깊게 파고드는 느낌을 받는다.
+						</div>
+					</div>
+				</div>
+				<div class="food5 type2 ww3">
+					<img src="./images/food5.png" alt="food5">
+					<div class="black">
+						<h3>갯장어회</h3>
+						<p>눈처럼 사르르 녹는 그 맛</p>
+						<div class="hide">
+							여름철 인기 만점 보양식인 갯장어 요리, 입에서 살살 녹는 부드러운 갯장어회와
+끓는 물에 살짝 데쳐먹는 갯장어 샤브샤브는 여름철 필수 음식 아이템으로 풍부한 맛과 영양을 자랑한다.
+						</div>
+					</div>
+				</div>
+				<div class="food6 type3 ww4">
+					<img src="./images/food6.png" alt="food6">
+					<div class="black">
+						<h3>전어회</h3>
+						<p>집나간 며느리도 돌아온다는</p>
+						<div class="hide">
+							가을전어 봄 멸치, 가을전어 대가리엔 깨가 서 말, 집나간 며느리 전어 굽는 냄새에 돌아온다는 말이 있다.
+사람들이 고소한 맛에 반해 돈(錢)을 생각하지 않고 먹었다는 데서 유래된 전어(錢魚)는 여수의 연근해 청정해역에서 생산되는 또 하나의 명물이다.
+						</div>
+					</div>
+				</div>
+				<div class="food7 type2 ww4">
+					<img src="./images/food7.png" alt="food7">
+					<div class="black">
+						<h3>굴구이</h3>
+						<p>청정 여수바다의 맛</p>
+						<div class="hide">
+							시간도 멈춰 서서 보글거리는 굴의 싱싱한 맛을 지켜 볼 정도로 맛있는 굴구이
+탱글탱글한 굴은 향과 맛이 진해 입안에 촉촉한 여운으로 남습니다.
+						</div>
+					</div>
+				</div>
+				<div class="food8 type2 ww3">
+					<img src="./images/food8.png" alt="food8">
+					<div class="black">
+						<h3>갈치조림</h3>
+						<p>매콤하고 단백한맛</p>
+						<div class="hide">
+							거문도 연근해에서 생산되는 일명 여수‘먹갈치’는 맛과 영양이 뛰어나 별미 중의 별미로 꼽힌다.
+가을갈치가 제격인 갈치조림이나 구이는 소화촉진, 식욕증진, 성인병 예방에 도움을 줄뿐더러 필수아미노산이 고루 함유돼 성장기 어린이 발육에 탁월한 식품이다.
+
+						</div>
+					</div>
+				</div>
+				<div class="food9 type4 ww5">
+					<img src="./images/food9.png" alt="food9">
+					<div class="black">
+						<h3>여수 한정식</h3>
+						<p>청정지역 남해안의 해산물이 가득 40여가지의 다양한 음식</p>
+						<div class="hide">
+							청정지역 남해안의 싱싱한 해산물을 주원료로 하여 40여 개의 다양한 음식들!
+맛의 아름다움에 놀라고 싱싱함에 놀라고 다양한 해산물에 놀랍니다.
+상차림에 청정해역 여수 앞바다의 싱싱함과 푸짐함에 놓여있고 여수의 정성을 느낄 수 있습니다.
+						</div>
+					</div>
+				</div>
+				<div class="food10 type2 ww5">
+					<img src="./images/food10.png" alt="food10">
+					<div class="black">
+						<h3>돌산 갓김치</h3>
+						<p>톡 쏘는 맛이 일품</p>
+						<div class="hide">
+							돌산 갓은 독특한 향이 있으며 일반갓보다 톡쏘는 매운맛과 섬유질이 적다.
+잎과 줄기에는 일반적인 붉은 갓과는 달리 잔털이 없으며 연하고 부드러운 연녹색 채소로 다른 채소에 비해 단백질 함량 또한 높다.
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section id="part3">
+		 <!-- 공연 및 축제: 여수의 3가지 대표  공연 및 축제를 소개 -->
+			<div class="one">
+				<div class="fwrap"></div>
+				<img src="./images/fes1.png" alt="fes1">
+				<div class="name">
+					<h3>공연 및 축제</h3>
+					<div class="line"></div>
+				</div>
+			</div>
+			<div class="two">
+				<div class="fwrap"></div>
+				<img src="./images/fes2.png" alt="fes2">
+				<div class="name">
+					<h3>문화예술 체험</h3>
+					<div class="line"></div>
+				</div>
+			</div>
+			<div class="three">
+				<div class="fwrap"></div>
+				<img src="./images/fes3.png" alt="fes3">
+				<div class="name">
+					<h3>여수낭만버스</h3>
+					<div class="line"></div>
+				</div>
+			</div>
+		</section>
+		<section id="part4">
+			<!-- 후기 : 여러 방문할 곳에 대한 사진과 날짜 등이 있음. -->
+			<div class="name">
+				<h3>후기</h3>
+				<div class="line"></div>
+			</div>
+			<div class="review">
+				<div class="review_img">
+					<ul>
+						<li></li>
+						<li></li>
+						<li></li>
+					</ul>
+				</div>
+				<div class="rinfo">
+					<h3>향일암</h3>
+					<p>2018.07.19 ~ 2018.07.21</p>
+					<p>Lorem ipsum dolor sit amet</p>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa.</p>
+				</div>
+			</div>
+			<div class="review">
+				<div class="review_img">
+					<ul>
+						<li></li>
+						<li></li>
+						<li></li>
+					</ul>
+				</div>
+				<div class="rinfo">
+					<h3>여수엑스포아쿠아리움</h3>
+					<p>2018.07.13 ~ 2018.07.15</p>
+					<p>Lorem ipsum dolor sit amet</p>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa.</p>
+				</div>
+			</div>
+			<div class="review">
+				<div class="review_img">
+					<ul>
+						<li></li>
+						<li></li>
+						<li></li>
+					</ul>
+				</div>
+				<div class="rinfo">
+					<h3>오동도</h3>
+					<p>2018.07.05 ~ 2018.07.06</p>
+					<p>Lorem ipsum dolor sit amet</p>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa.</p>
+				</div>
+			</div>
+		</section>
+	</section>
+	<footer id="footer">
+	<!-- 푸터 : 하단 sns +  메뉴 +회색 로고 -->
+		<div class="foot">
+			<div class="sns">
+				<img src="./images/fb.png" alt="facebook">
+				<img src="./images/go.png" alt="google">
+				<img src="./images/in.png" alt="instagram">
+				<img src="./images/tw.png" alt="twitter">
+			</div>
+			<div class="last">
+				<div>
+					<div class="t1">
+						<a href="#">개인정보처리방침</a>
+						<a href="#part1">관광지 소개</a>
+						<a href="#part2">먹거리 소개</a>
+						<a href="#part3">축제 및 체험</a>
+						<a href="#part4">후기</a>
+					</div>
+					<div class="t2">
+						<p>전남 여수시 시청로1(학동)</p>
+						<p>콜센터 : 1899-2012</p>
+						<p>관광통역안내 : 1330</p>
+						<p>E-mail : ksu2020@korea.kr</p>
+					</div>
+					<div class="t3">
+						COPYRIGHT (C) 2018 <strong>WEBSKILLS.KOREA</strong> ALL RIGHT RESERVED.
+					</div>
+				</div>
+				<div class="gray_logo">
+					<img src="./images/logo_2.png" alt="gray_logo">
+				</div>
+			</div>
+		</div>
+	</footer>
+</body>
+</html>
